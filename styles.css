@@ -6,29 +6,6 @@
   :root { font-family: InterVariable, sans-serif; }
 }
 
-@keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
 *, body {
   padding: 0;
   margin: 0;
@@ -44,6 +21,11 @@ img {
 body {
   background-color: #0f1428;
   color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #0033aa;
 }
 
 .grow {
@@ -128,11 +110,6 @@ body {
   font-family: Poppins, serif;
   font-weight: 600;
   font-size: 64px;
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2s; /* Firefox < 16 */
-  -ms-animation: fadein 2s; /* Internet Explorer */
-  -o-animation: fadein 2s; /* Opera < 12.1 */
-  animation: fadein 2s;
 }
 
 .about-text {
@@ -208,7 +185,7 @@ body {
   height: 130px;
 }
 
-.project-card a {
+.visit-website-button {
   border-radius: 5px;
   background-color: #0033aa;
   font-family: Poppins, serif;
